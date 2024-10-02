@@ -12,3 +12,13 @@ class Fornecedor(Juridica):
         # Validação do produto
         if not self.produto:
             raise ValueError("Produto não pode ser vazio.")
+
+    def __str__(self):
+        return (f"\n== Dados Fornecedor == "
+                f"ID: {self.id}\n"
+                f"Nome: {self.nome}\n"
+                f"Telefone: {self.telefone}\n"
+                f"Email: {self.email}\n"
+                f"CNPJ: {self.cnpj}\n"
+                f"Inscrição Estadual: {self.inscricao_estadual}\n"
+                f"Produto: {self.produto}")

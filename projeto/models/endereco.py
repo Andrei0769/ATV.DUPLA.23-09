@@ -9,3 +9,8 @@ class Endereco:
         self.cep = cep
         self.cidade = cidade
         self.uf = uf
+
+    def __str__(self):
+        return (f"\n== Dados Endereço == "
+                f"\n{self.logradouro}, \n{self.numero}, \n{self.complemento}, "
+                f"{self.cidade} - \n{self.uf}, \n{self.cep}")

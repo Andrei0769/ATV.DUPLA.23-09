@@ -1,4 +1,5 @@
 from models.pessoa import Pessoa
+from abc import ABC, abstractmethod
 
 class Juridica(Pessoa):
     def __init__(self, id: int, nome: str, telefone: str, email: str, endereco, cnpj: str, inscricao_estadual: str):
